@@ -2,6 +2,7 @@
     <HEAD>
       <TITLE> Digian HomePage - Marketing Digital </TITLE>
       <LINK REL="stylesheet" HREF="estilo.css">
+      <script src="digianscript.js"></script>
     </HEAD>
     <BODY>
       <SECTION NAME="inicio" ID="ini">
@@ -9,9 +10,9 @@
         <DIV CLASS="logo"> Digian </DIV>
         <DIV CLASS="nav">
           <BUTTON> INICIO </BUTTON>
-          <BUTTON> SOBRE NÓS </BUTTON>
-          <BUTTON> SERVIÇOS </BUTTON>
-          <BUTTON> CONTATOS </BUTTON>
+          <BUTTON onclick="irparaSobre()"> SOBRE NÓS </BUTTON>
+          <BUTTON onclick="irparaServ()"> SERVIÇOS </BUTTON>
+          <BUTTON onclick="irparaContato()"> CONTATOS </BUTTON>
         </DIV>
           <DIV CLASS="faq"> <BUTTON> FAQ </BUTTON> </DIV>
           <DIV CLASS="imginicio">
@@ -25,7 +26,7 @@
           <BR>
           Que vão Potencializar a sua marca na Web.
           </P></DIV></DIV></SECTION>
-    <SECTION>
+    <SECTION id="sobre">
       <DIV Class="sobre">
         <DIV  class="sobretexto">
           <H2>Sobre Nós</H2>
@@ -36,13 +37,13 @@
      <button class="iniciob" id="init"> INÍCIO</button>
         </DIV>
         <DIV Class="sobreimagem">
-          <IMG SRC="sobre.png" width="470" height="550">
+          <IMG SRC="sobre.png" width="470" height="550" id="isobre">
         </DIV>
       </DIV>
     </SECTION>
     <SECTION>
       <DIV class="serv" id="servico">
-        <h2> Nossos Serviços</h2>
+        <h2 id="iserv"> Nossos Serviços</h2>
         <p> Veja a seguir os Serviços Oferecidos pela Digian</p>
         <br>
         <DIV class="quadros">
@@ -83,24 +84,24 @@
       </DIV>
     </SECTION>
     <SECTION>
-      <DIV class="contato">
-      <DIV class="formbox">
-        Entre em Contato Conosco: <br>
-        <form method="post" action="#">
-          <label> Nome: </label>
-          <input type="text" width="40"> <br>
-          <label> E-mail: </label>
-          <input type="text" width="40"> <br>
-          <label> Digite abaixo suas duvidas </label> <br>
-          <textarea cols="40" rows="10"></textarea> <br>
-          <input type="submit" value="enviar">
-          <input type="reset" value="Cancelar">
-        </form>
+      <DIV CLASS="cont">
+        <DIV CLASS="form">
+          Entre em Contato Conosco: <br>
+          <form method="post" action="#">
+            <label id="icontato"> Nome: </label>
+            <INPUT TYPE="text" width="40"> <br>
+              <label> E-mail: </label>
+              <input type="text" width="40"> <br>
+              <label>Digite abaixo suas dúvidas</label> <br>
+              <textarea cols="40" rows="10"></textarea> <br>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Cancelar">
+          </form>
+        </DIV>
+        <DIV CLASS="imgcontato">
+          <IMG SRC="contato.png" width="70%" height="75%">
+        </DIV>
       </DIV>
-      <DIV CLASS="imgcontato"></DIV>
-      <IMG src="contato.png" width="70%" height="75%">
-      </DIV>
-      
     </SECTION>
     </BODY>
   </HTML>
