@@ -205,3 +205,39 @@ form input[type=text] {
     border-radius: 10px;
     background-color: #fff;
 }
+a:link{
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+a:visited{
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+.voltar {
+    position: absolute;
+    top: 2700px;
+    left: 800px;
+    z-index: 1;
+}
